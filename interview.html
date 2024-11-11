@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interview Html Questions</h1>
+
+    <details>
+        <summary>1.what is html ?</summary>
+        <p>HTML, or HyperText Markup Language, is the standard language used to create and design documents on the web.
+          It provides the structure for web pages, using a series of elements (often called tags) to define content such as headings, paragraphs, links, images, and other multimedia.
+        </p>
+    </details>
+
+    <details>
+        <summary>2.why we use html ?</summary>
+        <p>
+            HTML is essential for several reasons:
+
+Web Structure: It provides the basic structure for web pages, defining how content is organized and displayed.
+
+Content Formatting: HTML allows for formatting text, creating lists, tables, and sections, which helps in presenting information clearly.
+
+Linking: It enables the creation of hyperlinks, connecting different web pages and resources, facilitating easy navigation.
+
+Multimedia Integration: HTML supports embedding images, videos, and audio, making web pages more engaging and interactive.
+
+Accessibility: Proper use of HTML elements enhances accessibility for people using screen readers and other assistive technologies.
+
+SEO Benefits: Search engines use HTML structure to index content effectively, which can improve a site's visibility in search results.
+
+Cross-Platform Compatibility: HTML is universally supported by all web browsers, ensuring that web pages can be viewed consistently across different devices and platforms.
+
+Foundation for Other Technologies: HTML works alongside CSS (for styling) and JavaScript (for interactivity), forming the core technologies of web development.
+        </p>
+    </details>
+
+    <details>
+        <summary>3.what is <!DOCTYPE> in html ?</summary>
+        <p><!DOCTYPE> is a declaration that defines the document type and version of HTML being used. It's the very first line in an HTML document and helps the web browser render the page correctly.</p>
+    </details>
+
+    <details>
+        <summary>4.  What is the root element of html? </summary>
+        <p>The root element of an HTML document is the <html> element. It is the container for all other HTML elements and defines the entire HTML document. All other elements, such as the head and body, are nested inside the <html> element.</p>
+    </details>
+
+
+    <details>
+        <summary>5. What is a tag?</summary>
+        <p>A tag in HTML is a piece of code that defines an element in a web page. Tags are used to mark the start and end of HTML elements, which tell the browser how to structure and display content on the page. Tags are enclosed in angle brackets (<>) and usually come in pairs: an opening tag and a closing tag.
+
+            Key Points about Tags:
+            Opening tag: Begins an HTML element and is written as <element>. For example, <p> starts a paragraph.
+            Closing tag: Ends an HTML element and is written as </element>. For example, </p> ends a paragraph.
+            Some elements, like <img>, are self-closing and don't need a separate closing tag.</p>
+    </details>
+
+    <details>
+        <summary>6. Give me a few examples of self-closing tags?</summary>
+        <p>Self-closing tags, also known as void elements, do not have a closing tag because they don’t contain any content. Instead, they are written as a single tag. Here are a few examples of commonly used self-closing tags in HTML:
+
+            <img>: Defines an image.
+            
+            html
+            Copy code
+            <img src="image.jpg" alt="Image description" />
+            <br>: Inserts a line break.
+            
+            html
+            Copy code
+            <p>This is a line.<br />This is a new line.</p>
+            <hr>: Inserts a horizontal line (a thematic break).
+            
+            html
+            Copy code
+            <hr />
+            <input>: Defines an input field (e.g., text, button, etc.).
+            
+            html
+            Copy code
+            <input type="text" name="username" />
+            <meta>: Provides metadata about the HTML document (e.g., character set, description).
+            
+            html
+            Copy code
+            <meta charset="UTF-8" />
+            <link>: Defines a relationship between the document and an external resource, like a stylesheet.
+            
+            html
+            Copy code
+            <link rel="stylesheet" href="styles.css" />
+            Self-closing tags are used when there’s no need to wrap content inside the element. In modern HTML (HTML5), it’s not strictly required to include the closing /, so both <br> and <br /> are valid.</p>
+    </details>
+
+    <details>
+        <summary>7. What is an element?</summary>
+        <p>An element in HTML is a fundamental building block used to structure and display content on a web page. It consists of a start tag, content (optional), and an end tag (except for self-closing elements). HTML elements define different parts of the document, such as headings, paragraphs, images, links, and more</p>
+    </details>
+
+    <details>
+        <summary>8.  How many types of elements are there in html?</summary>
+        <p>In HTML, there are two main types of elements:
+
+            Block-level elements: Occupy the full width and start on a new line (e.g., <div>, <p>, <h1>).
+            Inline elements: Occupy only as much width as necessary and don’t start on a new line (e.g., <span>, <a>, <img>).
+            Self-closing elements: Don't have closing tags and are self-contained (e.g., <img>, <br>, <hr>).
+            Empty elements: Elements that have no content or children (e.g., <input>, <meta>).
+            Container elements: Hold other elements inside them (e.g., <div>, <form>).</p>
+    </details>
+
+    <details>
+        <summary>9.What is d/f b/w the inline vs block elements?</summary>
+        <p>The key differences between inline and block-level elements in HTML are:
+            1. Layout Behavior:
+            Block-level elements: Always start on a new line and take up the full width available (from left to right in the container).
+            Inline elements: Do not start on a new line and only take up as much width as their content requires.
+            2. Content Flow:
+            Block-level elements: Stack vertically, one on top of the other.
+            Inline elements: Flow horizontally within the block they are contained in, side by side.
+            3. Nested Elements:
+            Block-level elements: Can contain other block-level or inline elements.
+            Inline elements: Typically can only contain other inline elements or text (block elements inside inline elements are invalid).
+            4. Width and Height:
+            Block-level elements: You can explicitly set their width, height, margin, and padding.
+            Inline elements: Width and height cannot be set directly (they are based on the content), but padding and margin can affect them.
+        </p>
+    </details>
+
+    <details>
+        <summary>10.what is the diffrence between semantic and non-semantic elements?</summary>
+        <p>Here’s a concise comparison of semantic and non-semantic elements in HTML:
+
+            Semantic Elements:
+            Meaning: Clearly describe their content and purpose (e.g., <header>, <footer>, <article>).
+            Accessibility: Improve accessibility for assistive technologies.
+            SEO: Enhance search engine optimization by providing context.
+            Readability: Make code more readable and maintainable.
+            Non-Semantic Elements:
+            Meaning: Generic containers without intrinsic meaning (e.g., <div>, <span>).
+            Accessibility: Provide no additional context for accessibility tools.
+            SEO: Offer no extra context for search engines.
+            Readability: Require additional context (like classes) to clarify their purpose.
+
+            In summary, semantic elements add meaning, while non-semantic elements are used primarily for layout and styling.</p>
+    </details>
+    <details>
+        <summary>11.What are href vs src attributes? </summary>
+        <p>The href and src attributes in HTML serve different purposes for linking and embedding resources. Here’s a comparison:
+
+            href Attribute:
+            Purpose: Used to specify the URL of a linked resource, typically for hyperlinks.
+            Common Elements: Primarily used with <a> (anchor) tags to create links to other web pages, documents, or resources.
+            Example:
+            html
+            Copy code
+            <a href="https://www.example.com">Visit Example</a>
+            Usage: When a user clicks the link, they are directed to the URL specified in the href attribute.
+            src Attribute:
+            Purpose: Used to specify the URL of a resource that is to be embedded within the document, such as images, videos, or scripts.
+            Common Elements: Primarily used with img, script iframe, audio, and video tags.
+            </p>
+    </details>
+    <details>
+        <summary>12.What are the Features in HTML 5?</summary>
+        <p>HTML5 introduced a range of features designed to make web development simpler, more powerful, and more flexible. Here’s a summary of the most notable features:
+1. New Semantic Elements
+HTML5 introduced semantic elements that improve the readability and accessibility of the HTML code. These include:
+<header>, <footer>, <article>, <section>, <aside>, <nav>, <main>
+These tags help structure content logically, making it easier for search engines and screen readers to interpret page content.
+2. Multimedia Support
+Audio and Video Tags: HTML5 added native support for multimedia with the <audio> and <video> tags, allowing developers to embed media without needing external plugins like Flash.
+Support for different codecs in these tags also allows for more flexibility and control over media playback.
+3. Canvas Element for Graphics
+The <canvas> element lets developers draw graphics directly on the webpage using JavaScript. This is particularly useful for rendering images, creating animations, and building complex visual elements like charts and games.
+4. SVG and MathML Support
+HTML5 supports SVG (Scalable Vector Graphics), allowing for high-quality vector graphics directly within HTML. This is great for creating scalable, interactive visuals.
+MathML support lets developers write mathematical notations directly in HTML, which is beneficial for educational and scientific websites.
+5. Improved Form Controls
+HTML5 introduced new input types for forms, which make data collection easier and more accurate. These include:
+type="email", type="url", type="date", type="number", type="range", type="color", type="tel"
+New attributes like required, placeholder, pattern, and autofocus also improve form usability and validation.
+6. Local Storage and Session Storage
+localStorage and sessionStorage allow data to be stored locally within the user’s browser, enabling offline capabilities and persistent data storage without needing cookies.
+This is especially useful for web applications that need to save user data even if the page is refreshed.
+7. Geolocation API
+HTML5 includes a Geolocation API that allows websites to request and display the user’s geographic location (with their permission). This feature is widely used in applications like maps, location-based services, and targeted content.
+8. Web Workers
+Web Workers allow JavaScript code to run in the background, separate from the main page, so heavy tasks don’t slow down the user experience. This is useful for tasks like data processing, file handling, and complex calculations.
+9. WebSockets
+WebSockets provide a way to establish a constant connection between the client and server, enabling real-time data updates and two-way communication. This is useful for live chat applications, online gaming, and other interactive, real-time features.
+10. Drag and Drop API
+HTML5 includes a Drag and Drop API, allowing users to drag and drop items within or between web applications. This feature can make user interfaces more interactive and intuitive.
+11. Microdata for SEO
+HTML5 supports the use of Microdata to provide extra semantic meaning to HTML elements, enhancing SEO. With attributes like itemscope, itemtype, and itemprop, it’s easier for search engines to understand and rank content.</p>
+    </details>
+    <details>
+        <summary>13.what are the Html Entites?</summary>
+        <p>In HTML, entities are special characters that are used to display symbols, reserved characters, or special characters in a web page that might otherwise be interpreted as HTML code. HTML entities are written using a specific syntax that typically starts with an ampersand (&) and ends with a semicolon (;), like &entity_name; or &#entity_number;.
+
+Here’s a breakdown of the main uses and types of HTML entities:
+1. Reserved Characters
+Some characters have special meanings in HTML, like < (less than), > (greater than), & (ampersand), and " (double quote). To display these characters as text, you need to use entities:
+&lt; for <
+&gt; for >
+&amp; for &
+&quot; for "
+&apos; for '
+2. Accented Characters
+HTML entities also support accented characters that are commonly used in various languages, allowing web pages to display characters beyond the standard English alphabet.
+&eacute; for é
+&ntilde; for ñ
+&ccedil; for ç
+These entities make it easier to add international characters without needing special fonts.
+3. Symbols and Special Characters
+HTML entities are often used to insert symbols that aren’t typically found on the keyboard, like mathematical operators, currency symbols, and other special characters.
+&copy; for ©
+&reg; for ®
+&euro; for €
+&pound; for £
+&cent; for ¢
+4. Using Numeric Character References
+Each character in HTML has a unique numeric code point, and you can use this code as an entity. These are called numeric character references:
+&#169; for ©
+&#34; for "
+&#60; for <
+You can use either decimal (e.g., &#169;) or hexadecimal (e.g., &#xA9;) values, with hex values prefixed by x.
+5. Whitespace Entities
+By default, HTML collapses multiple spaces into one. To display extra spaces or add a non-breaking space, you can use &nbsp;, which stands for a non-breaking space. This is commonly used for layout adjustments and keeping elements on the same line.
+Examples of Common HTML Entities:
+&lt; → <
+&gt; → >
+&copy; → ©
+&trade; → ™
+&nbsp; → (non-breaking space)
+&#9829; or &hearts; → ♥
+Entities help ensure that HTML code is rendered correctly and prevents unintended interpretation of special characters by the browser. This is especially useful in situations where you need to display code snippets, mathematical formulas, or other complex text content.</p>
+    </details>
+    <details>
+        <summary>14.What is Div Vs Span?</summary>
+        <p>Certainly! Here’s a comparison of `<div>` and `<span>` in a tabular format:
+
+| Feature                    | `<div>`                                   | `<span>`                                 |
+|----------------------------|-------------------------------------------|------------------------------------------|
+| **Type of Element**        | Block-level                              | Inline                                   |
+| **Line Behavior**          | Starts on a new line                     | Stays on the same line                   |
+| **Typical Usage**          | Grouping larger sections of content, layout containers | Styling or targeting small parts of text within a line |
+| **CSS Styling**            | Best for layout properties (e.g., `width`, `height`, `margin`, `padding`) | Best for text-related properties (e.g., `color`, `font-size`, `font-weight`) |
+| **JavaScript Use**         | Often used for handling larger sections or components | Used for targeting and modifying smaller, inline elements |
+| **Semantic Meaning**       | None – purely structural                 | None – purely structural                 |
+| **Example Use Case**       | Wrapping an article, sidebar, or footer  | Highlighting a word or phrase within text |
+| **Example Code**           | `<div class="container">...</div>`       | `<span class="highlight">...</span>`     |
+
+</p>
+    </details>
+    <details>
+        <summary>15. What are list tags in html?</summary>
+        <p>In HTML, list tags are used to group related information and create well-structured views. There are a few different types of list tags, including: 
+ 
+ Ordered lists
+ Use the <ol> tag to start an ordered list, and the </ol> tag to end it. List items in an ordered list are numbered by default. 
+  
+ Unordered lists
+ Use the <ul> tag to define an unordered list, which is usually displayed as a bulleted list. 
+  
+ Nested lists
+ A list inside of another list. You can create a nested list by using both ordered and unordered list tags.</p>
+    </details>
+
+    <details>
+        <summary>16.What are Attributes?</summary>
+        <p>HTML attributes are special words that are used to modify the behavior or display of an HTML element. They are added to the opening HTML tag and are made up of a name and a value:
+Name: A predefined name from the HTML specification, such as href, title, class, or src
+Value: The data for the attribute 
+</p>
+    </details>
+
+    <details>
+        <summary>17.mention a few attributes for img tags?</summary>
+        <p>HTML attributes are special words that are used to modify the behavior or display of an HTML element. They are added to the opening HTML tag and are made up of a name and a value:
+Name: A predefined name from the HTML specification, such as href, title, class, or src
+Value: The data for the attribute </p>
+    </details>
+
+    <details>
+        <summary>18.what is T head in html?</summary>
+        <p>The tHead property in HTML refers to the <thead> element, which groups the column headers (headings) for a table. The <thead> element is a block of rows that defines the columns for the table. 
+ 
+ The <thead> element is not required, but it can be useful for: Search engine crawlers, Accessability purposes, and Styling. 
+  
+ The <thead> element is different from the table header cell element, which is represented by the <th> element. The distinction between the two elements allows user agents to render them differently, such as by using a larger font for the header cells. 
+  </p>
+    </details>
+
+    <details>
+        <summary>19.What is tr?</summary>
+        <p>the tr in Html Document Defines table Row</p>
+    </details>
+
+    <details>
+        <summary>20.what is th?</summary>
+        <p>the tr in Html Document Defines table heading</p>
+    </details>
+
+    <details>
+        <summary>21.what is th?</summary>
+        <p>the tr in Html Document Defines table data</p>
+    </details>
+
+    <details>
+        <summary>22.can i use th in tbody?</summary>
+        <p>You can either do without the thead, tbody, and tfoot items, or you use those items but you keep the th/td within the blocks (inside their <tr> tags, of course). That said, that doesn't mean th tags can only be in the thead tag. You can have th tags in the tbody tag, too, in place of td tags.13 </p>
+    </details>
+
+    <details>
+        <summary>23.What are meta tags?What is seo?</summary>
+        <p>Meta tags are HTML code snippets that provide information about a web page to search engines and users: 
+ 
+ What they are
+ Meta tags are pieces of HTML code that provide information about a web page to search engines and users. They are usually located in the <head> section of the page's HTML. </p>
+    </details>
+
+    <details>
+        <summary>24.what is attr of the html tag?</summary>
+        <p>In the HTML DOM, an Attr object represents an HTML attribute. An HTML attribute always belongs to an HTML element.</p>
+    </details>
+
+    <details>
+        <summary>25.What is an iframe and anchor?</summary>
+        <p>An anchor is the visible region which must be selected to activate the link. The iframe tag is used to display a web page inside a web page. When you create a document to be inside an iframe, any links in that frame will automatically open in that same frame.</p>
+    </details>
+
+    <details>
+        <summary>26.What is git vs github?</summary>
+        <p>Git vs. GitHub: Git is a version control system that tracks code changes locally. GitHub is an online platform that hosts Git repositories, enabling collaboration, issue tracking, and project management.</p>
+    </details>
+
+    <details>
+        <summary>27.What is the workflow of github?</summary>
+        <p>GitHub Workflow: Create a repository, clone it locally, make changes, commit them, push updates to GitHub, and collaborate with others through pull requests and branches.</p>
+    </details>
+
+    <details>
+        <summary>28.What command do we need to use to move the changes to staged changes?</summary>
+        <p>Move Changes to Staged: Use git add <file> to move changes from the working directory to the staging area.
+</p>
+    </details>
+
+    <details>
+        <summary>29.How can you stage all files at a time?</summary>
+        <p>Stage All Files: Use git add . to stage all modified files at once.
+</p>
+    </details>
+
+    <details>
+        <summary>30.What is the git push command and use of it?</summary>
+        <p>Git Push Command: git push uploads committed changes from the local repository to a remote repository, such as GitHub.</p>
+    </details>
+
+    <details>
+        <summary>31.What is git commit command usage?</summary>
+        <p>Git Commit Command: git commit -m "message" saves staged changes to the local repository with a descriptive message.</p>
+    </details>
+
+    <details>
+        <summary>32.What is the use of the git init command?</summary>
+        <p>Git Init Command: git init initializes a new Git repository in the current directory.</p>
+    </details>
+
+    <details>
+        <summary>33.What are formatting tags?</summary>
+        <p>Formatting Tags: Tags like <b>, <i>, <u>, <strong>, and <em> format text for bold, italic, underline, and emphasis.</p>
+    </details>
+
+    <details>
+        <summary>34.what are the input tag atts?</summary>
+        <p>input Tag Attributes: Common attributes are type, name, value, placeholder, required, and disabled.
+        </p>
+    </details>
+
+    <details>
+        <summary>35.What r form attributes?</summary>
+        <p>Form Attributes: action, method, enctype, autocomplete, and target control form behavior and data submission.
+        </p>
+    </details>
+    
+    <details>
+        <summary>36.What is a marquee tag?</summary>
+        <p>Marquee Tag: Displays scrolling text or images; not widely supported in modern HTML.
+        </p>
+    </details>
+
+    <details>
+        <summary>37.What is the marquee tag attrS?</summary>
+        <p>Marquee Tag Attributes: direction, scrollamount, loop, and behavior control scrolling behavior.
+        </p>
+    </details>
+
+    <details>
+        <summary>38.What are multimedia tags?</summary>
+        <p>Multimedia Tags: Tags like audio, video, and embed allow multimedia embedding in HTML.
+        </p>
+    </details>
+
+    <details>
+        <summary>39.Can we use block elements in inline elements?</summary>
+        <p>Block Elements in Inline: It’s not valid to place block elements (like <div>) within inline elements (like span).
+        </p>
+    </details>
+
+    <details>
+        <summary>40.What are d/f b/ abs vs real paths?</summary>
+        <p>Absolute vs. Relative Paths: Absolute paths are complete URLs; relative paths are relative to the current document’s location.
+        </p>
+    </details>
+
+    <details>
+        <summary>41.What are summary and details tags?</summary>
+        <p>Summary and Details Tags: details allows expandable content, and "summary tag" is the visible title for the expandable section.</p>
+    </details>
+
+    <details>
+        <summary>43.What tag is helpful to give the reviews ?</summary>
+        <p>Tag for Reviews: blockquote is often used to display reviews or quotes.
+        </p>
+    </details>
+
+    <details>
+        <summary>44.fieldset and legend tag?</summary>
+        <p>Fieldset and Legend Tags: fieldset groups form elements, and legend provides a caption for the grouped elements.
+        </p>
+    </details>
+</body>
+</html>
